@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DGIST AI Build Week 2026 Poster</title>
+  <meta name="description" content="English poster for DGIST AI Build Week 2026.">
+  <meta property="og:title" content="DGIST AI Build Week 2026 Poster">
+  <meta property="og:description" content="English poster for DGIST AI Build Week 2026.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#080b16">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b16;
+      --panel: rgba(13, 18, 32, .86);
+      --line: rgba(255, 255, 255, .12);
+      --text: #f6f8ff;
+      --muted: rgba(246, 248, 255, .68);
+      --accent: #4a78ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      width: 100vw;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(74, 120, 255, .22), transparent 32rem),
+        linear-gradient(180deg, #0c1121 0%, #080b16 100%);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 58px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(16px);
+    }
+
+    .title {
+      min-width: 0;
+    }
+
+    h1 {
+      margin: 0;
+      overflow: hidden;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .meta {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 650;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      border-color: rgba(74, 120, 255, .72);
+      background: var(--accent);
+    }
+
+    .viewer {
+      min-height: 0;
+      display: grid;
+      gap: 18px;
+      justify-items: center;
+      padding: 18px;
+    }
+
+    .poster-page {
+      display: block;
+      width: min(100%, 980px);
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .42);
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      h1 {
+        white-space: normal;
+      }
+
+      .actions {
+        width: 100%;
+      }
+
+      .button {
+        flex: 1 1 0;
+      }
+
+      .viewer {
+        padding: 8px;
+        gap: 8px;
+      }
+
+      .poster-page {
+        border-radius: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="title">
+        <h1>DGIST AI Build Week 2026 - English Poster</h1>
+        <div class="meta">PDF poster viewer</div>
+      </div>
+      <nav class="actions" aria-label="Poster actions">
+        <a class="button" href="./Poster_English.pdf" target="_blank" rel="noopener">Open PDF</a>
+        <a class="button primary" href="./Poster_English.pdf" download>Download</a>
+      </nav>
+    </header>
+
+    <section class="viewer" aria-label="Poster pages">
+      <img class="poster-page" src="./poster-page-1.png" alt="DGIST AI Build Week 2026 English poster page 1" width="2383" height="3369" decoding="async" fetchpriority="high">
+      <img class="poster-page" src="./poster-page-2.png" alt="DGIST AI Build Week 2026 English poster page 2" width="2383" height="3369" loading="lazy" decoding="async">
+    </section>
+  </main>
+</body>
+</html>
